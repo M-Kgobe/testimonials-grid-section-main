@@ -1,40 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;    
+}
 body{
     display: grid;
     background-color: hsl(0, 0%, 81%);
     width: 70vw;
-    font-size: 15px;   
+    height: auto;
+    font-size: 15px; 
+    justify-content: center;  
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    position: relative;
+    top: 60px;
 }
 .testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
+    grid-gap: 20px;
     width:100%;
-    height: 100%;
-    padding: 25px;
+    height:100%;
     margin: auto;
-
+    line-height: 1.3em;
 }
 .Daniel{
     background-color: hsl(263, 55%, 52%);
     grid-column: 1/3;
     border-radius: 10px;
     padding: 25px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .Jonathan{
     background-color: hsl(217, 19%, 35%);
     border-radius: 10px;
     padding: 25px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .Jeanette{
     background-color:hsl(0, 0%, 100%);
     border-radius: 10px;
     padding: 25px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .Patrick{
     background-color: hsl(219, 29%, 14%);
     grid-column: 2/4;
     border-radius: 10px;
     padding: 25px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .Kira{
     background-color: hsl(0, 0%, 100%);
@@ -42,6 +68,10 @@ body{
     grid-row: 1/3;
     border-radius: 10px;
     padding: 25px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .username{
@@ -95,12 +125,24 @@ img{
 }
 
 @media screen and (max-width:700px){
+    body{
+        display: grid;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+
+    }
     .testimonials{
         display: flex;
         flex-direction: column;
         height: 100%;
         width: auto;
-        object-fit: contain;
+        margin: auto;
+    }
+    .Patrick .Jeanette .Jonathan .Kira .Daniel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     
