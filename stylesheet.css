@@ -5,23 +5,20 @@
 }
 body{
     display: grid;
-    background-color: hsl(0, 0%, 81%);
-    width: 70vw;
-    height: auto;
+    background-color: hsl(210, 46%, 95%);
     font-size: 15px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500,600;
     justify-content: center;  
     align-items: center;
     margin: auto;
     padding: 25px;
-    position: relative;
-    top: 60px;
 }
 .testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    max-width: 80%;
     width:100%;
     height:100%;
     margin: auto;
@@ -36,6 +33,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top right 5rem;
+    background-size: auto;
 }
 .Jonathan{
     background-color: hsl(217, 19%, 35%);
@@ -90,32 +91,32 @@ body{
     justify-content: right;
     right: 0;
 }
-#gray .quotes{
+.gray .quotes{
     color: hsl(210, 46%, 95%);
     opacity: 0.7;
 }
-#grayish .quotes{
+.grayish .quotes{
     color:  hsl(217, 19%, 35%);
     opacity: 0.7;
 }
-#grayish .name{
+.grayish .name{
     color: hsl(219, 29%, 14%);
 }
-#grayish .verified{
+.grayish .verified{
     color: hsl(219, 29%, 14%);
     opacity: 0.5;
 }
-#gray .name{
+.gray .name{
     color: hsl(210, 46%, 95%);
 }
-#gray .verified{
+.gray .verified{
     color: hsl(210, 46%, 95%);
     opacity: 0.5;
 }
-#gray .comment{
+.gray .comment{
     color: hsl(0, 0%, 81%);
 }
-#grayish .comment{
+.grayish .comment{
     color: hsl(217, 19%, 35%);
 }
 img{
